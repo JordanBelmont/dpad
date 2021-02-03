@@ -1,0 +1,28 @@
+.screen {
+   /* width: 80%; */
+   text-align: center;
+   /* margin-left: auto;
+   margin-right: auto; */
+   /* background-size: contain; */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url("../images/screen.jpg");
+}
+
+.album {
+   width: 26.1%;
+   margin: 18.5%;
+}
+
+/* * IPAD */
+@media only screen and (min-width: 550px) {
+   .screen {
+   /* padding: 31.53%; */
+   margin-left: auto;
+   margin-right: auto;
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url("../images/screen.jpg");
+   }
+}
