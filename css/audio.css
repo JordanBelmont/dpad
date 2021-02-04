@@ -17,8 +17,9 @@ button {
 .play-icon,
 .previous-icon,
 .next-icon {
-   height: auto;
+   /* height: auto; */
    width: 80px;
+   margin-bottom: 100px;
 }
 
 .play-icon:hover,

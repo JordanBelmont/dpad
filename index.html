@@ -6,20 +6,9 @@
    <meta http-equiv='imagetoolbar' content='no'>
    <meta http-equiv='x-ua-compatible' content='ie=edge'>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-   <link rel='shortcut icon' href='/icons/favicon/favicon.ico' type='image/x-icon'>
-   <link rel='apple-touch-icon' href='/icons/favicon/apple-touch-icon.png'>
-   <link rel='apple-touch-icon' sizes='57x57' href='/icons/favicon/apple-touch-icon-57x57.png'>
-   <link rel='apple-touch-icon' sizes='72x72' href='/icons/favicon/apple-touch-icon-72x72.png'>
-   <link rel='apple-touch-icon' sizes='76x76' href='/icons/favicon/apple-touch-icon-76x76.png'>
-   <link rel='apple-touch-icon' sizes='114x114' href='/icons/favicon/apple-touch-icon-114x114.png'>
-   <link rel='apple-touch-icon' sizes='120x120' href='/icons/favicon/apple-touch-icon-120x120.png'>
-   <link rel='apple-touch-icon' sizes='144x144' href='/icons/favicon/apple-touch-icon-144x144.png'>
-   <link rel='apple-touch-icon' sizes='152x152' href='/icons/favicon/apple-touch-icon-152x152.png'>
-   <link rel='apple-touch-icon' sizes='180x180' href='/icons/favicon/apple-touch-icon-180x180.png'>
-
+   <link rel="shortcut icon" href="#">
    <link rel='stylesheet' href='css/style.css'>
-   <!-- <script defer src='example.js'></script> -->
+   <script defer src='javascript/script.js'></script>
 
    <title></title>
 </head>
@@ -34,19 +23,19 @@
    <div class="screen">
 
       <!-- Now Playing -->
-      <p class="now-playing" id="nowPlaying">NOW PLAYING</p>
+      <p class="now-playing">NOW PLAYING</p>
 
       <!-- Volume -->
       <div class="volume">
          <button id="mute">
             <img class="volume-icon" id="volumeIcon" src="icons/volume.png"></img>
          </button>
-         <input type="range" min="0" max="100" value="90">
+         <input type="range" min="0" max="100" value="90" id="volumeSlider">
          <p class="volume-number" id="volumeNumber">90</p>
       </div>
 
       <!-- Album -->
-      <img class="album" id="album" src="images/albums/earthworm-jim.jpg">
+      <img class="album" id="album">
 
       <!-- Song -->
       <div class="song">
@@ -55,10 +44,11 @@
       <p class="song-title" id="title">song title</p>
    </div>
 
-
       <!-- Duration -->
       <div class="duration">
+         <div class="current-time" id="currentTime">00:00</div>
          <input type="range" min="0" max="100" value="0" id="durationSlider">
+         <div class="total-time" id="totalTime">00:00</div>
       </div>
 
       <!-- Audio Controls -->
@@ -67,7 +57,7 @@
             <img class="previous-icon" src="icons/previous.png"></img>
          </button>
          <button id="play">
-            <img class="play-icon" aria-hidden="true" src="icons/play.png"></img>
+            <img class="play-icon" src="icons/play.png"></img>
          </button>
          <button id="next">
             <img class="next-icon" aria-hidden="true" src="icons/next.png"></img>
