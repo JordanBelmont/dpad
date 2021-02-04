@@ -1,28 +1,29 @@
 .screen {
-   /* width: 80%; */
-   text-align: center;
+   position: relative;
+   height: 80%;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
    /* margin-left: auto;
    margin-right: auto; */
-   /* background-size: contain; */
+   background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
    background-image: url("../images/screen.jpg");
 }
 
 .album {
-   width: 26.1%;
-   margin: 18.5%;
+   height: 40%;
+   width: 40%;
+}
+
+.nowplaying {
+   font-size: 30px;
+   letter-spacing: 10px;
+   color: #d51879;
+   font-family: "8bit";
 }
 
 /* * IPAD */
-@media only screen and (min-width: 550px) {
-   .screen {
-   /* padding: 31.53%; */
-   margin-left: auto;
-   margin-right: auto;
-   background-size: contain;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-image: url("../images/screen.jpg");
-   }
-}

@@ -1,0 +1,23 @@
+button {
+   display: inline-block;
+   background-color: Transparent;
+   background-repeat: no-repeat;
+   border: none;
+   cursor: pointer;
+   overflow: hidden;
+   outline: none;
+}
+
+.play,
+.previous,
+.next {
+   height: auto;
+   width: 75px;
+}
+
+.play:hover,
+.previous:hover,
+.next:hover {
+   filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+   transition: .2s ease-in-out;
+}

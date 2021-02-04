@@ -29,8 +29,45 @@
       <img class="marquee" src="images/d-pad.jpg" alt="d-pad arcade marquee">
       <img class="speakers" src="images/speakers.png" alt="arcade speakers">
    </header>
+
+   <!-- Music Screen -->
    <div class="screen">
-      <img class="album" src="images/albums/earthworm-jim.jpg" alt="album artwork">
+
+      <!-- Now Playing -->
+      <p class="nowplaying" id="nowPlaying">NOW PLAYING</p>
+
+      <!-- Album Art -->
+      <img class="album" id="album" src="images/albums/earthworm-jim.jpg">
+
+      <!-- Volume -->
+      <div class="volume">
+         <p class="volume-number" id="volumeNumber">90</p>
+         <i class="volume-icon" id="volumeIcon" aria-hidden="true"></i>
+         <input type="range" min="0" max="100" value="90">
+      </div>
+
+      <!-- Song Title -->
+      <p id="game">game name</p>
+      <p id="song">song title</p>
+
+      <!-- Audio Controls -->
+      <div class="buttons">
+      <button id="previous">
+         <img class="previous" src="icons/previous.png"></img>
+      </button>
+      <button id="play">
+         <img class="play" aria-hidden="true" src="icons/play.png"></img>
+      </button>
+      <button id="next">
+         <img class="next" aria-hidden="true" src="icons/next.png"></img>
+      </button>
+   </div>
+
+      <!-- song duration -->
+      <div class="duration">
+         <input type="range" min="0" max="100" value="0" id="durationSlider">
+      </div>
+
    </div>
 </body>
 
