@@ -1,23 +1,29 @@
+.buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
 button {
    display: inline-block;
-   background-color: Transparent;
+   background-color: transparent;
    background-repeat: no-repeat;
    border: none;
    cursor: pointer;
-   overflow: hidden;
    outline: none;
+   margin: 20px;
 }
 
-.play,
-.previous,
-.next {
+.play-icon,
+.previous-icon,
+.next-icon {
    height: auto;
-   width: 75px;
+   width: 80px;
 }
 
-.play:hover,
-.previous:hover,
-.next:hover {
+.play-icon:hover,
+.previous-icon:hover,
+.next-icon:hover {
    filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
    transition: .2s ease-in-out;
 }

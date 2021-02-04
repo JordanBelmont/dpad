@@ -30,42 +30,48 @@
       <img class="speakers" src="images/speakers.png" alt="arcade speakers">
    </header>
 
-   <!-- Music Screen -->
+   <!-- Screen -->
    <div class="screen">
 
       <!-- Now Playing -->
-      <p class="nowplaying" id="nowPlaying">NOW PLAYING</p>
-
-      <!-- Album Art -->
-      <img class="album" id="album" src="images/albums/earthworm-jim.jpg">
+      <p class="now-playing" id="nowPlaying">NOW PLAYING</p>
 
       <!-- Volume -->
       <div class="volume">
-         <p class="volume-number" id="volumeNumber">90</p>
-         <i class="volume-icon" id="volumeIcon" aria-hidden="true"></i>
+         <button id="mute">
+            <img class="volume-icon" id="volumeIcon" src="icons/volume.png"></img>
+         </button>
          <input type="range" min="0" max="100" value="90">
+         <p class="volume-number" id="volumeNumber">90</p>
       </div>
 
-      <!-- Song Title -->
-      <p id="game">game name</p>
-      <p id="song">song title</p>
+      <!-- Album -->
+      <img class="album" id="album" src="images/albums/earthworm-jim.jpg">
+
+      <!-- Song -->
+      <div class="song">
+      <p class="game-name" id="game">game name</p>
+      <p class="dash">-</p>
+      <p class="song-title" id="title">song title</p>
+   </div>
+
+
+      <!-- Duration -->
+      <div class="duration">
+         <input type="range" min="0" max="100" value="0" id="durationSlider">
+      </div>
 
       <!-- Audio Controls -->
       <div class="buttons">
-      <button id="previous">
-         <img class="previous" src="icons/previous.png"></img>
-      </button>
-      <button id="play">
-         <img class="play" aria-hidden="true" src="icons/play.png"></img>
-      </button>
-      <button id="next">
-         <img class="next" aria-hidden="true" src="icons/next.png"></img>
-      </button>
-   </div>
-
-      <!-- song duration -->
-      <div class="duration">
-         <input type="range" min="0" max="100" value="0" id="durationSlider">
+         <button id="previous">
+            <img class="previous-icon" src="icons/previous.png"></img>
+         </button>
+         <button id="play">
+            <img class="play-icon" aria-hidden="true" src="icons/play.png"></img>
+         </button>
+         <button id="next">
+            <img class="next-icon" aria-hidden="true" src="icons/next.png"></img>
+         </button>
       </div>
 
    </div>

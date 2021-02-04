@@ -1,0 +1,41 @@
+input {
+   -webkit-appearance: none;
+   width: 30%;
+   outline: none;
+   height: 2px;
+   /* margin: 15px; */
+   /* background: blue; */
+}
+
+input::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   height: 20px;
+   width: 20px;
+   background: red;
+   cursor: pointer;
+}
+
+.volume {
+   margin: 40px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:red;
+}
+
+.volume-number {
+   font-family: '8bit';
+   font-size: 15px;
+   margin: 20px;
+}
+
+.volume-icon {
+   height: auto;
+   width: 50px;
+}
+
+.volume-icon:hover {
+   filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+   transition: .2s ease-in-out;
+}

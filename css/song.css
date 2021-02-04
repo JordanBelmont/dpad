@@ -1,0 +1,14 @@
+.game-name,
+.dash,
+.song-title {
+   display: inline-block;
+   font-size: 20px;
+   letter-spacing: 5px;
+   color: #d51879;
+   font-family: "8bit";
+}
+
+.game-name,
+.song-title {
+   margin: 20px;
+}

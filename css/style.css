@@ -1,5 +1,10 @@
+@import 'fonts.css';
 @import 'marquee.css';
 @import 'screen.css';
-@import 'buttons.css';
-@import 'fonts.css';
+@import 'nowplaying.css';
+@import 'volume.css';
+@import 'album.css';
+@import 'song.css';
+@import 'audio.css';
+@import 'duration.css';
 @import 'reset.css';
