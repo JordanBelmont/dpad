@@ -54,13 +54,190 @@ let track_list = [
       game: "C&C Red Alert",
       img: "images/albums/red-alert.jpg",
       path: "music/Red Alert C&C - Hell March.mp3"
+   },
+   {
+      name: "Nell's Theme",
+      game: "Advance Wars",
+      img: "images/albums/advance-wars.jpg",
+      path: "music/Advance Wars - Nell's Theme.mp3"
+   },
+   {
+      name: "Runner AD2025",
+      game: "Alien Soldier",
+      img: "images/albums/alien-soldier.jpg",
+      path: "music/Alien Soldier - Runner AD2025.mp3"
+   },
+   {
+      name: "Level 5",
+      game: "Chuck Rock",
+      img: "images/albums/chuck-rock.jpg",
+      path: "music/Chuck Rock - Level 5.mp3"
+   },
+   {
+      name: "Just Do It",
+      game: "Guilty Gear Xrd SIGN",
+      img: "images/albums/guilty-gear.jpg",
+      path: "music/Guilty Gear Xrd -SIGN- Just do it.mp3"
+   },
+   {
+      name: "Stage 1",
+      game: "Keio Flying Squadron",
+      img: "images/albums/keio.jpg",
+      path: "music/Keio Flying Squadron - Stage 1.mp3"
+   },
+   {
+      name: "Title Theme",
+      game: "Kid Icarus",
+      img: "images/albums/kid-icarus.jpg",
+      path: "music/Kid Icarus - Title Theme.mp3"
+   },
+   {
+      name: "Village of Whispers",
+      game: "Killer Instinct",
+      img: "images/albums/killer-instinct.jpg",
+      path: "music/Killer Instinct - Village of Whispers.mp3"
+   },
+   {
+      name: "Main Theme",
+      game: "Quake",
+      img: "images/albums/quake.jpg",
+      path: "music/Quake - Main Theme.mp3"
+   },
+   {
+      name: "My Dear D",
+      game: "Shinobi III",
+      img: "images/albums/shinobi3.jpg",
+      path: "music/Shinobi III - My Dear D.mp3"
+   },
+   {
+      name: "Title Theme",
+      game: "Splatterhouse 2",
+      img: "images/albums/splatterhouse2.jpg",
+      path: "music/Splatterhouse 2 - Title Theme.mp3"
+   },
+   {
+      name: "Title Theme",
+      game: "Spyro the Dragon",
+      img: "images/albums/spyro.jpg",
+      path: "music/Spyro the Dragon - Title Theme.mp3"
+   },
+   {
+      name: "Active Red",
+      game: "Street Fighter Alpha 3",
+      img: "images/albums/street-fighter-alpha.jpg",
+      path: "music/Street Fighter Alpha 3 - Active Red.mp3"
+   },
+   {
+      name: "Never Return Alive",
+      game: "Streets of Rage II",
+      img: "images/albums/sor2.jpg",
+      path: "music/Streets of Rage 2 - Never Return Alive.mp3"
+   },
+   {
+      name: "Can o' Salt",
+      game: "Super Meat Boy",
+      img: "images/albums/supermeat.jpg",
+      path: "music/Super Meat Boy - Can o' Salt.mp3"
+   },
+   {
+      name: "Engineering",
+      game: "System Shock 2",
+      img: "images/albums/system-shock2.jpg",
+      path: "music/System Shock 2 - Engineering.mp3"
+   },
+   {
+      name: "Doom M",
+      game: "The Lost Vikings 2",
+      img: "images/albums/lost-vikings2.jpg",
+      path: "music/The Lost Vikings 2 - Doom M.mp3"
+   },
+   {
+      name: "Ice Station",
+      game: "Timesplitters 2",
+      img: "images/albums/timesplitters2.jpg",
+      path: "music/Timesplitters 2 - Ice Station.mp3"
+   },
+   {
+      name: "Toejam Jammin'",
+      game: "Toejam & Earl",
+      img: "images/albums/toejam-and-earl.jpg",
+      path: "music/Toejam & Earl - Toejam Jammin'.mp3"
+   },
+   {
+      name: "Still More Fighting",
+      game: "Final Fantasy VII",
+      img: "images/albums/ffvii.jpg",
+      path: "music/Final Fantasy VII - Still More Fighting [HQ].mp3"
+   },
+   {
+      name: "Vic Viper",
+      game: "Zone of the Enders: The 2nd Runner",
+      img: "images/albums/zoe2.jpg",
+      path: "music/Z.O.E - The 2nd Runner Music  - Vic Viper Boss Battle.mp3"
+   },
+   {
+      name: "Ragnarok Canyon",
+      game: "Battletoads in Battlemaniacs",
+      img: "images/albums/battletoads.jpg",
+      path: "music/Battletoads in Battlemaniacs - Ragnarok Canyon.mp3"
+   },
+   {
+      name: "Main Theme",
+      game: "God of War II",
+      img: "images/albums/gow2.jpg",
+      path: "music/God of War 2 - Main Theme.mp3"
+   },
+   {
+      name: "Miners and Climbers Disco",
+      game: "Lemmings",
+      img: "images/albums/lemmings.jpg",
+      path: "music/Lemmings - Miners And Climbers Disco.mp3"
+   },
+   {
+      name: "Dovahkiin",
+      game: "Skyrim",
+      img: "images/albums/skyrim.jpg",
+      path: "music/Skyrim - Dovahkiin.mp3"
+   },
+   {
+      name: "Hammer Bros.",
+      game: "Super Mario Bros. 3",
+      img: "images/albums/super-mario-3.jpg",
+      path: "music/Super Mario Bros 3 - Hammer Bros.mp3"
+   },
+   {
+      name: "Ocean",
+      game: "Terraria",
+      img: "images/albums/terraria.jpg",
+      path: "music/Terraria - Ocean.mp3"
+   },
+   {
+      name: "Sewer Surfin'",
+      game: "TMNT IV: Turtles in Time",
+      img: "images/albums/tmnt.jpg",
+      path: "music/TMNT IV - Sewer Surfin'.mp3"
+   },
+   {
+      name: "Megalovania",
+      game: "Undertale",
+      img: "images/albums/undertale.jpg",
+      path: "music/Undertale - Megalovania.mp3"
+   },
+   {
+      name: "Infinite Blue",
+      game: "F-Zero GX",
+      img: "images/albums/f-zero.jpg",
+      path: "music/F-Zero GX - Infinite Blue.mp3"
+   },
+   {
+      name: "Chop Chop Master Onion Rap",
+      game: "Parappa the Rapper",
+      img: "images/albums/parappa.jpg",
+      path: "music/Parappa the Rapper - Chop Chop Master Onion Rap.mp3"
    }
 ];
 
 // * FUNCTIONS
-
-// Clear duration timer
-
 
 // Load Tracks
 function loadTrack(track_index) {
