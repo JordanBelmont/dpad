@@ -1,14 +1,24 @@
+.song {
+   width: 80%;
+   text-align: center;
+}
+
+.game-name,
+.dash,
+.song-title {
+   display: block;
+   font-size: 25px;
+   letter-spacing: 5px;
+   color: #D6187A;
+   font-family: "8bit";
+   margin: 20px;
+}
+
+/* * IPAD */
+@media only screen and (min-width: 550px) {
 .game-name,
 .dash,
 .song-title {
    display: inline-block;
-   font-size: 20px;
-   letter-spacing: 5px;
-   color: #d51879;
-   font-family: "8bit";
 }
-
-.game-name,
-.song-title {
-   margin: 20px;
 }

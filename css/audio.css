@@ -1,10 +1,14 @@
+.audio {
+   margin: 40px 40px 0 40px;
+}
+
 .buttons {
    display: flex;
    flex-direction: row;
    justify-content: center;
 }
 
-button {
+.audio button {
    display: inline-block;
    background-color: transparent;
    background-repeat: no-repeat;
@@ -17,14 +21,17 @@ button {
 .play-icon,
 .previous-icon,
 .next-icon {
-   /* height: auto; */
    width: 80px;
-   margin-bottom: 100px;
 }
 
 .play-icon:hover,
 .previous-icon:hover,
 .next-icon:hover {
-   filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
-   transition: .2s ease-in-out;
+   animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange {
+   0% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
+   50% { filter: invert(60%) sepia() saturate(50%) hue-rotate(120deg) contrast(80%); }
+   100% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
 }

@@ -1,7 +1,14 @@
 .now-playing {
-   margin-top: 100px;
-   font-size: 30px;
+   margin: 250px 20px 40px 20px;
+   font-size: 40px;
    letter-spacing: 10px;
-   color: #d51879;
+   color: #D6187A;
    font-family: "8bit";
+   animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+   0% { color: #D6187A; }
+   50% { color: #F7EB32; }
+   100% { color: #D6187A; }
 }

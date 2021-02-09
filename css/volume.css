@@ -1,28 +1,38 @@
 input {
    -webkit-appearance: none;
-   width: 30%;
+   width: 100%;
    outline: none;
    height: 2px;
    /* margin: 15px; */
-   /* background: blue; */
+   background: #1671D5;
 }
 
 input::-webkit-slider-thumb {
    -webkit-appearance: none;
    height: 20px;
    width: 20px;
-   background: red;
+   background: #F7EB32;
    cursor: pointer;
 }
 
 .volume {
    margin: 40px;
-   width: 100%;
+   width: 30%;
    display: flex;
    align-items: center;
    justify-content: center;
-   color:red;
+   color: #D6187A;
 }
+
+.volume button {
+      display: inline-block;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      margin: 20px 20px 20px 0;
+   }
 
 .volume-number {
    font-family: '8bit';

@@ -1,8 +1,16 @@
 .duration {
-   margin: 20px;
-   width: 100%;
+   margin-bottom: 200px;
+   width: 60%;
    display: flex;
    align-items: center;
    justify-content: center;
-   color:red;
+}
+
+.current-time,
+.total-time {
+   margin: 20px;
+   font-size: 20px;
+   letter-spacing: 5px;
+   color: #D6187A;
+   font-family: "8bit";
 }

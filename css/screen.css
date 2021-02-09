@@ -1,15 +1,21 @@
 .screen {
    position: relative;
    height: 100%;
-   width: 90%;
+   width: 91%;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
-   background-size: contain;
+   background-size: 100% 100%;
    background-position: center;
    background-repeat: no-repeat;
    background-image: url("../images/screen.jpg");
 }
 
 /* * IPAD */
+@media only screen and (min-width: 550px) {
+   .screen {
+      width: 80%;
+      background-image: url("../images/screen-large.jpg");
+   }
+}

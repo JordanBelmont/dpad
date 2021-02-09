@@ -18,7 +18,9 @@ let totalTime = document.getElementById('totalTime');
 // Global values
 let updateTimer;
 let track_index = 0;
+let autoplay = 1;
 let isPlaying = false;
+let muteToggle = false;
 
 // Create audio element for the player
 let curr_track = document.createElement('audio');
@@ -257,22 +259,27 @@ function loadTrack(track_index) {
    
    // Update duration slider
    updateTimer = setInterval(seekUpdate, 1000);
-
-   // Change track on end of song
-   // curr_track.addEventListener("ended", autoPlay() {
-      
-   // }; 
 }
 
+// Value reset
 function resetValues() {
    currentTime.textContent = "00:00";
    totalTime.textContent = "00:00";
    durationSlider.value = 0;
 }
 
+// Autoplay
+curr_track.addEventListener("ended", function autoplay() {
+   if (curr_track.ended) {
+      track_index += 1;
+      loadTrack(track_index);
+      playTrack();
+   }
+})
+
 // Play/Pause Click
 play.addEventListener("click", function playPauseTrack() {
-   if (!isPlaying) {
+   if (isPlaying == false) {
       playTrack();
    } else {
       pauseTrack();
@@ -317,21 +324,25 @@ previous.addEventListener("click", function prevTrack() {
 
 // Mute sound
 mute.addEventListener("click", function muteSound() {
-   if (curr_track.volume !== 0 || volumeSlider.value !== 0) {
+   if (muteToggle !== true) {
+      muteToggle = true;
       curr_track.volume = 0;
       volumeSlider.value = 0;
       mute.innerHTML = '<img class="volume-icon" src="icons/mute.png"></img>'
-   } else { 
+   } else {
+      muteToggle = false;
       curr_track.volume = 1;
-      volumeSlider.value = 1;
-      mute.innerHTML = '<img class="volume-icon" src="icons/volume.png"></img>'};
+      volumeSlider.value = 50;
+      mute.innerHTML = '<img class="volume-icon" src="icons/volume.png"></img>' }
    });
 
+// Duration slider
 durationSlider.addEventListener("change", function seek() {
    seekto = curr_track.duration * (durationSlider.value / 100);
    curr_track.currentTime = seekto;
 });
 
+// Volume slider
 volumeSlider.addEventListener("change", function setVolume() {
    curr_track.volume = volumeSlider.value / 100;
 });

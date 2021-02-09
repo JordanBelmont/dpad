@@ -15,8 +15,7 @@
 
 <body>
    <header>
-      <img class="marquee" src="images/d-pad.jpg" alt="d-pad arcade marquee">
-      <img class="speakers" src="images/speakers.png" alt="arcade speakers">
+      <img class="marquee" src="images/marquee-large.jpg" alt="d-pad arcade marquee">
    </header>
 
    <!-- Screen -->
@@ -30,8 +29,7 @@
          <button id="mute">
             <img class="volume-icon" id="volumeIcon" src="icons/volume.png"></img>
          </button>
-         <input type="range" min="0" max="100" value="90" id="volumeSlider">
-         <p class="volume-number" id="volumeNumber">90</p>
+         <input type="range" min="0" max="100" value="50" id="volumeSlider">
       </div>
 
       <!-- Album -->
@@ -44,15 +42,8 @@
       <p class="song-title" id="title">song title</p>
    </div>
 
-      <!-- Duration -->
-      <div class="duration">
-         <div class="current-time" id="currentTime">00:00</div>
-         <input type="range" min="0" max="100" value="0" id="durationSlider">
-         <div class="total-time" id="totalTime">00:00</div>
-      </div>
-
       <!-- Audio Controls -->
-      <div class="buttons">
+      <div class="audio">
          <button id="previous">
             <img class="previous-icon" src="icons/previous.png"></img>
          </button>
@@ -62,6 +53,13 @@
          <button id="next">
             <img class="next-icon" aria-hidden="true" src="icons/next.png"></img>
          </button>
+      </div>
+
+      <!-- Duration -->
+      <div class="duration">
+         <div class="current-time" id="currentTime">00:00</div>
+         <input type="range" min="0" max="100" value="0" id="durationSlider">
+         <div class="total-time" id="totalTime">00:00</div>
       </div>
 
    </div>
