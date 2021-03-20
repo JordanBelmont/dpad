@@ -28,6 +28,12 @@ let curr_track = document.createElement('audio');
 // Track list
 let track_list = [
    {
+      name: "Escape",
+      game: "Super Mario Odyssey",
+      img: "images/albums/mario-odyssey.jpg",
+      path: "music/Super Mario Odyssey - Escape.mp3"
+   },
+   {
       name: "New Junk City",
       game: "Earthworm Jim",
       img: "images/albums/earthworm-jim.jpg",
@@ -70,6 +76,18 @@ let track_list = [
       path: "music/Alien Soldier - Runner AD2025.mp3"
    },
    {
+      name: "Nevan",
+      game: "Devil May Cry 3",
+      img: "images/albums/dmc3.jpg",
+      path: "music/Devil May Cry 3 - Nevan.mp3"
+   },
+   {
+      name: "Just Plains",
+      game: "Wario Land: Shake It!",
+      img: "images/albums/wario.jpg",
+      path: "music/Wario Land Shake It - Just Plains.mp3"
+   },
+   {
       name: "Level 5",
       game: "Chuck Rock",
       img: "images/albums/chuck-rock.jpg",
@@ -94,6 +112,12 @@ let track_list = [
       path: "music/Kid Icarus - Title Theme.mp3"
    },
    {
+      name: "Neo Cortex",
+      game: "Crash Trilogy",
+      img: "images/albums/crash.jpg",
+      path: "music/Crash Trilogy - Neo Cortex.mp3"
+   },
+   {
       name: "Village of Whispers",
       game: "Killer Instinct",
       img: "images/albums/killer-instinct.jpg",
@@ -112,6 +136,12 @@ let track_list = [
       path: "music/Shinobi III - My Dear D.mp3"
    },
    {
+      name: "Neo Ex-Death",
+      game: "Dissidia Duodecim",
+      img: "images/albums/dissidia.jpg",
+      path: "music/Dissidia Duodecim - Neo Ex-Death.mp3"
+   },
+   {
       name: "Title Theme",
       game: "Splatterhouse 2",
       img: "images/albums/splatterhouse2.jpg",
@@ -122,6 +152,12 @@ let track_list = [
       game: "Spyro the Dragon",
       img: "images/albums/spyro.jpg",
       path: "music/Spyro the Dragon - Title Theme.mp3"
+   },
+   {
+      name: "Guardiana Library",
+      game: "Shining Force CD",
+      img: "images/albums/shining-force.jpg",
+      path: "music/Shining Force CD - Guardiana Library.mp3"
    },
    {
       name: "Active Red",
@@ -146,6 +182,12 @@ let track_list = [
       game: "System Shock 2",
       img: "images/albums/system-shock2.jpg",
       path: "music/System Shock 2 - Engineering.mp3"
+   },
+   {
+      name: "Stages 1-4",
+      game: "Dr. Robotnik's Mean Bean Machine",
+      img: "images/albums/mean-bean.jpg",
+      path: "music/Dr. Robotnik's Mean Bean Machine - Stages 1-4.mp3"
    },
    {
       name: "Doom M",

@@ -46,6 +46,9 @@ input::-webkit-slider-thumb {
 }
 
 .volume-icon:hover {
-   filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
-   transition: .2s ease-in-out;
+   animation: colour-change 4s infinite;
+}
+
+@keyframes colour-change {
+   50% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
 }

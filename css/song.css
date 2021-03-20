@@ -4,7 +4,6 @@
 }
 
 .game-name,
-.dash,
 .song-title {
    display: block;
    font-size: 25px;
@@ -12,6 +11,15 @@
    color: #D6187A;
    font-family: "8bit";
    margin: 20px;
+}
+
+.dash {
+   display: block;
+   font-size: 20px;
+   letter-spacing: 5px;
+   color: #D6187A;
+   font-family: "8bit";
+   margin: 10px;
 }
 
 /* * IPAD */

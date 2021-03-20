@@ -27,11 +27,7 @@
 .play-icon:hover,
 .previous-icon:hover,
 .next-icon:hover {
-   animation: colorchange 1s infinite;
+   animation: colour-change 4s infinite;
 }
 
-@keyframes colorchange {
-   0% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
-   50% { filter: invert(60%) sepia() saturate(50%) hue-rotate(120deg) contrast(80%); }
-   100% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
-}
+
