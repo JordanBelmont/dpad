@@ -24,8 +24,8 @@ header {
    display: none;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * IPAD PRO * */
+@media only screen and (min-width: 1024px) {
    .marquee-large {
       width: 80%;
       margin-left: auto;

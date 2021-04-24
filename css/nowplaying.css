@@ -15,8 +15,8 @@
    100% { color: #D6187A; }
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * IPAD PRO * */
+@media only screen and (min-width: 1024px) {
    .now-playing {
       font-size: 40px;
       line-height: 0px;

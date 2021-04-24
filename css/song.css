@@ -21,8 +21,8 @@
    font-family: "8bit";
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * IPAD PRO * */
+@media only screen and (min-width: 1024px) {
    .game-name,
    .song-title {
       line-height: 50px;

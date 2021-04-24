@@ -13,8 +13,8 @@
    font-family: "8bit";
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * IPAD PRO * */
+@media only screen and (min-width: 1024px) {
    .duration {
       margin-bottom: 200px;
       width: 60%;

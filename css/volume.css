@@ -43,8 +43,8 @@ input::-webkit-slider-thumb {
    50% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * IPAD PRO * */
+@media only screen and (min-width: 1024px) {
    .volume {
       margin: 5px;
       width: 30%;
