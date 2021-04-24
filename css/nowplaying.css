@@ -1,7 +1,9 @@
 .now-playing {
-   margin: 200px 20px 40px 20px;
-   font-size: 40px;
+   margin: 125px 20px 0px 20px;
+   text-align: center;
+   font-size: 25px;
    letter-spacing: 10px;
+   line-height: 50px;
    color: #D6187A;
    font-family: "8bit";
    animation: color-change 1s infinite;
@@ -11,4 +13,13 @@
    0% { color: #D6187A; }
    50% { color: #F7EB32; }
    100% { color: #D6187A; }
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   .now-playing {
+      font-size: 40px;
+      line-height: 0px;
+      margin: 200px 20px 40px 20px;
+   }
 }

@@ -1,4 +1,3 @@
-
 let previous = document.getElementById('previous');
 let play = document.getElementById('play');
 let next = document.getElementById('next');
@@ -211,7 +210,7 @@ let track_list = [
       name: "Still More Fighting",
       game: "Final Fantasy VII",
       img: "images/albums/ffvii.jpg",
-      path: "music/Final Fantasy VII - Still More Fighting [HQ].mp3"
+      path: "music/Final Fantasy VII - Still More Fighting.mp3"
    },
    {
       name: "Vic Viper",
@@ -284,7 +283,7 @@ let track_list = [
 // * FUNCTIONS
 
 // Load Tracks
-function loadTrack(track_index) {
+loadTrack = (track_index) => {
 
    // Clear previous timer
    clearInterval(updateTimer);
@@ -304,7 +303,7 @@ function loadTrack(track_index) {
 }
 
 // Value reset
-function resetValues() {
+resetValues = () => {
    currentTime.textContent = "00:00";
    totalTime.textContent = "00:00";
    durationSlider.value = 0;
@@ -329,14 +328,14 @@ play.addEventListener("click", function playPauseTrack() {
 })
 
 // Play
-function playTrack() {
+playTrack = () => {
    curr_track.play();
    isPlaying = true;
    play.innerHTML = '<img class="play-icon" src="icons/pause.png"></img>'; 
 }
 
 // Pause
-function pauseTrack() {
+pauseTrack = () => {
    curr_track.pause();
    isPlaying = false;
    play.innerHTML = '<img class="play-icon" src="icons/play.png"></img>';
@@ -365,7 +364,7 @@ previous.addEventListener("click", function prevTrack() {
 });
 
 // Mute sound
-mute.addEventListener("click", function muteSound() {
+mute.addEventListener("click", muteSound = () => {
    if (muteToggle !== true) {
       muteToggle = true;
       curr_track.volume = 0;
@@ -379,17 +378,17 @@ mute.addEventListener("click", function muteSound() {
    });
 
 // Duration slider
-durationSlider.addEventListener("change", function seek() {
+durationSlider.addEventListener("change", seek = () => {
    seekto = curr_track.duration * (durationSlider.value / 100);
    curr_track.currentTime = seekto;
 });
 
 // Volume slider
-volumeSlider.addEventListener("change", function setVolume() {
+volumeSlider.addEventListener("change", setVolume = () => {
    curr_track.volume = volumeSlider.value / 100;
 });
 
-function seekUpdate() { 
+seekUpdate = () => { 
    let seekPosition = 0;
    if (!isNaN(curr_track.duration)) {
       seekPosition = curr_track.currentTime * (100 / curr_track.duration);

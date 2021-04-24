@@ -2,12 +2,6 @@
    margin: 40px 40px 0 40px;
 }
 
-.buttons {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-}
-
 .audio button {
    display: inline-block;
    background-color: transparent;
@@ -15,19 +9,37 @@
    border: none;
    cursor: pointer;
    outline: none;
-   margin: 20px;
+   margin: 5px;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
 .play-icon,
 .previous-icon,
 .next-icon {
-   width: 80px;
+   width: 60px;
 }
 
-.play-icon:hover,
-.previous-icon:hover,
-.next-icon:hover {
-   animation: colour-change 4s infinite;
-}
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   .audio button {
+      margin: 20px;
+   }
+   
+   .play-icon,
+   .previous-icon,
+   .next-icon {
+      width: 80px;
+   }
 
+   .play-icon:hover,
+   .previous-icon:hover,
+   .next-icon:hover {
+      animation: colour-change 4s infinite;
+   }
+}
 
