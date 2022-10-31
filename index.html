@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <meta charset='utf-8'>
    <meta name='websitedescription' content='test'>
@@ -15,35 +16,19 @@
 
 <body>
    <header>
-      <img class="marquee-large" src="images/marquee-large.jpg" alt="d-pad arcade marquee">
-      <img class="marquee-small" src="images/marquee.jpg" alt="d-pad arcade marquee">
+      <img class="marquee-large" src="images/Logo.png" alt="d-pad arcade marquee">
    </header>
+
+   <!-- Now Playing -->
+   <p class="now-playing">NOW PLAYING</p>
 
    <!-- Screen -->
    <div class="screen">
 
-      <!-- Now Playing -->
-      <p class="now-playing">NOW PLAYING</p>
-
-      <!-- Volume -->
-      <div class="volume">
-         <button id="mute">
-            <img class="volume-icon" id="volumeIcon" src="icons/volume.png"></img>
-         </button>
-         <input type="range" min="0" max="100" value="50" id="volumeSlider">
-      </div>
-
       <!-- Album -->
-      <img class="album" id="album">
-
-      <!-- Song -->
-      <div class="song">
-      <p class="game-name" id="game">game name</p>
-      <br>
-      <p class="dash">-</p>
-      <br>
-      <p class="song-title" id="title">song title</p>
-   </div>
+      <div class="flex-album">
+         <img class="album" id="album">
+      </div>
 
       <!-- Audio Controls -->
       <div class="audio">
@@ -59,16 +44,37 @@
       </div>
 
       <!-- Duration -->
-      <div class="duration">
-         <div class="current-time" id="currentTime">00:00</div>
-         <input type="range" min="0" max="100" value="0" id="durationSlider">
-         <div class="total-time" id="totalTime">00:00</div>
+      <div class="flex-duration">
+         <div class="duration">
+            <div class="current-time" id="currentTime">00:00</div>
+            <input type="range" min="0" max="100" value="0" id="durationSlider">
+            <div class="total-time" id="totalTime">00:00</div>
+         </div>
+      </div>
+
+      <!-- Song -->
+      <div class="flex-song">
+         <div class="song">
+            <p class="song-title" id="title">song title</p>
+            <p class="game-name" id="game">game name</p>
+         </div>
+      </div>
+
+      <!-- Volume -->
+
+      <div class="volume-flex">
+         <div class="volume">
+            <button id="mute">
+               <img class="volume-icon" id="volumeIcon" src="icons/volume.png"></img>
+            </button>
+            <input type="range" min="0" max="100" value="50" id="volumeSlider">
+         </div>
       </div>
 
    </div>
 </body>
 
 <footer>
-<footer>
+   <footer>
 
 </html>

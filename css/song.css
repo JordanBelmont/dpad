@@ -1,17 +1,23 @@
+.flex-song {
+   display: flex;
+   justify-content: center;
+   grid-area: album;
+   grid-area: song;
+}
+
 .song {
-   width: 80%;
    text-align: center;
+   padding-top: 20px;
 }
 
 .game-name,
 .song-title {
    display: block;
-   font-size: 20px;
+   font-size: 10px;
    letter-spacing: 5px;
    line-height: 35px;
    color: #D6187A;
    font-family: "8bit";
-   margin: 10px;
 }
 
 .dash {
@@ -27,14 +33,16 @@
    .song-title {
       line-height: 50px;
       display: block;
-      font-size: 30px;
+      font-size: 20px;
       letter-spacing: 5px;
-      margin: 20px;
+   }
+
+   .song-title {
+      font-size: 30px;
    }
 
    .dash {
       font-size: 20px;
       letter-spacing: 5px;
-      margin: 10px;
    }
 }

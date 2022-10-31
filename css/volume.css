@@ -1,6 +1,12 @@
+.volume-flex {
+   grid-area: volume;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
 .volume {
    margin: 10px 0px 20px 0px;
-   width: 80%;
    color: #D6187A;
    text-align: center;
 }
@@ -47,7 +53,7 @@ input::-webkit-slider-thumb {
 @media only screen and (min-width: 1024px) {
    .volume {
       margin: 5px;
-      width: 30%;
+      width: 80%;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -1,21 +1,17 @@
 .audio {
-   margin: 40px 40px 0 40px;
+   grid-area: audio;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
 
 .audio button {
-   display: inline-block;
    background-color: transparent;
    background-repeat: no-repeat;
    border: none;
    cursor: pointer;
    outline: none;
    margin: 5px;
-}
-
-.buttons {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
 }
 
 .play-icon,
@@ -26,14 +22,10 @@
 
 /* * IPAD PRO * */
 @media only screen and (min-width: 1024px) {
-   .audio button {
-      margin: 20px;
-   }
-   
    .play-icon,
    .previous-icon,
    .next-icon {
-      width: 80px;
+      width: 100px;
    }
 
    .play-icon:hover,
