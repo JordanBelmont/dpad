@@ -2,7 +2,7 @@
    grid-area: audio;
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: center;
 }
 
 .audio button {
@@ -11,7 +11,8 @@
    border: none;
    cursor: pointer;
    outline: none;
-   margin: 5px;
+   margin: 5px 40px;
+
 }
 
 .play-icon,
@@ -34,4 +35,3 @@
       animation: colour-change 4s infinite;
    }
 }
-

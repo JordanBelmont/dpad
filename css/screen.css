@@ -1,7 +1,7 @@
 .screen {
    display: grid;
-   grid-template-columns: repeat(2, 700px);
-   grid-template-rows: repeat(5, 10em);
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(5, 1fr);
    grid-template-areas:
    "album volume"
    "album ."
@@ -9,5 +9,5 @@
    "album ."
    "song duration"
    "song .";
-   column-gap: 20em;
+   column-gap: 1fr;
 }
