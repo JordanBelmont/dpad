@@ -1,18 +1,18 @@
-let previous = document.getElementById('previous');
-let play = document.getElementById('play');
-let next = document.getElementById('next');
+let previous = document.getElementById("previous");
+let play = document.getElementById("play");
+let next = document.getElementById("next");
 
-let album = document.getElementById('album');
-let game = document.getElementById('game');
-let title = document.getElementById('title');
+let album = document.getElementById("album");
+let game = document.getElementById("game");
+let title = document.getElementById("title");
 
-let mute = document.getElementById('mute');
-let volumeSlider = document.getElementById('volumeSlider');
-let volumeNumber = document.getElementById('volumeNumber');
+let mute = document.getElementById("mute");
+let volumeSlider = document.getElementById("volumeSlider");
+let volumeNumber = document.getElementById("volumeNumber");
 
-let durationSlider = document.getElementById('durationSlider');
-let currTime = document.getElementById('currentTime');
-let totalTime = document.getElementById('totalTime');
+let durationSlider = document.getElementById("durationSlider");
+let currTime = document.getElementById("currentTime");
+let totalTime = document.getElementById("totalTime");
 
 // Global values
 let updateTimer;
@@ -22,7 +22,7 @@ let isPlaying = false;
 let muteToggle = false;
 
 // Create audio element for the player
-let curr_track = document.createElement('audio');
+let curr_track = document.createElement("audio");
 
 // Track list
 let track_list = [
@@ -37,12 +37,6 @@ let track_list = [
       game: "Earthworm Jim",
       img: "images/albums/earthworm-jim.jpg",
       path: "music/Earthworm Jim - New Junk City.mp3"
-   },
-   {
-      name: "Prologue",
-      game: "Castlevania: Symphony of the Night",
-      img: "images/albums/castlevania.jpg",
-      path: "music/Castlevania SOTN - Prologue.mp3"
    },
    {
       name: "Toot Toot Sonic Warrior",
@@ -210,13 +204,7 @@ let track_list = [
       name: "Still More Fighting",
       game: "Final Fantasy VII",
       img: "images/albums/ffvii.jpg",
-      path: "music/Final Fantasy VII - Still More Fighting.mp3"
-   },
-   {
-      name: "Vic Viper",
-      game: "Zone of the Enders: The 2nd Runner",
-      img: "images/albums/zoe2.jpg",
-      path: "music/Z.O.E - The 2nd Runner Music  - Vic Viper Boss Battle.mp3"
+      path: "music/Final Fantasy VII - Still More Fighting [HQ].mp3"
    },
    {
       name: "Ragnarok Canyon",
@@ -229,12 +217,6 @@ let track_list = [
       game: "God of War II",
       img: "images/albums/gow2.jpg",
       path: "music/God of War 2 - Main Theme.mp3"
-   },
-   {
-      name: "Miners and Climbers Disco",
-      game: "Lemmings",
-      img: "images/albums/lemmings.jpg",
-      path: "music/Lemmings - Miners And Climbers Disco.mp3"
    },
    {
       name: "Dovahkiin",
@@ -271,12 +253,6 @@ let track_list = [
       game: "F-Zero GX",
       img: "images/albums/f-zero.jpg",
       path: "music/F-Zero GX - Infinite Blue.mp3"
-   },
-   {
-      name: "Chop Chop Master Onion Rap",
-      game: "Parappa the Rapper",
-      img: "images/albums/parappa.jpg",
-      path: "music/Parappa the Rapper - Chop Chop Master Onion Rap.mp3"
    }
 ];
 
@@ -297,7 +273,7 @@ loadTrack = (track_index) => {
    title.textContent = track_list[track_index].name;
    game.textContent = track_list[track_index].game;
    album.src = track_list[track_index].img;
-   
+
    // Update duration slider
    updateTimer = setInterval(seekUpdate, 1000);
 }
@@ -331,14 +307,14 @@ play.addEventListener("click", function playPauseTrack() {
 playTrack = () => {
    curr_track.play();
    isPlaying = true;
-   play.innerHTML = '<img class="play-icon" src="icons/pause.png"></img>'; 
+   play.innerHTML = "<img class='play-icon' src='icons/pause.png'></img>";
 }
 
 // Pause
 pauseTrack = () => {
    curr_track.pause();
    isPlaying = false;
-   play.innerHTML = '<img class="play-icon" src="icons/play.png"></img>';
+   play.innerHTML = "<img class='play-icon' src='icons/play.png'></img>";
 }
 
 // Next track
@@ -369,13 +345,14 @@ mute.addEventListener("click", muteSound = () => {
       muteToggle = true;
       curr_track.volume = 0;
       volumeSlider.value = 0;
-      mute.innerHTML = '<img class="volume-icon" src="icons/mute.png"></img>'
+      mute.innerHTML = "<img class='volume-icon' src='icons/mute.png'></img>";
    } else {
       muteToggle = false;
       curr_track.volume = 1;
       volumeSlider.value = 50;
-      mute.innerHTML = '<img class="volume-icon" src="icons/volume.png"></img>' }
-   });
+      mute.innerHTML = "<img class='volume-icon' src='icons/volume.png'></img>";
+   }
+});
 
 // Duration slider
 durationSlider.addEventListener("change", seek = () => {
@@ -388,21 +365,21 @@ volumeSlider.addEventListener("change", setVolume = () => {
    curr_track.volume = volumeSlider.value / 100;
 });
 
-seekUpdate = () => { 
+seekUpdate = () => {
    let seekPosition = 0;
    if (!isNaN(curr_track.duration)) {
       seekPosition = curr_track.currentTime * (100 / curr_track.duration);
       durationSlider.value = seekPosition;
 
-      let currentMinutes = Math.floor(curr_track.currentTime / 60); 
-      let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60); 
-      let durationMinutes = Math.floor(curr_track.duration / 60); 
-      let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60); 
+      let currentMinutes = Math.floor(curr_track.currentTime / 60);
+      let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+      let durationMinutes = Math.floor(curr_track.duration / 60);
+      let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
 
-      if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; } 
-      if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; } 
-      if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; } 
-      if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; } 
+      if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+      if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+      if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+      if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
 
       currTime.textContent = currentMinutes + ":" + currentSeconds;
       totalTime.textContent = durationMinutes + ":" + durationSeconds;
