@@ -1,20 +1,28 @@
-body {
-   background-image: url(/images/marquee-3.png);
-   background-repeat: no-repeat;
-   background-position: center top;
-   background-size: 100%;
+/* * IPHONE * */
+
+.flex-album {
+   display: flex;
+   justify-content: center;
+   grid-area: album;
 }
 
-/* * IPAD PRO * */
-@media only screen and (min-width: 1024px) {
-   .flex-album {
-      display: flex;
-      justify-content: center;
-      grid-area: album;
+.album {
+   width: 90%;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .album {
+      width: 75%;
    }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
 
    .album {
       padding-top: 50px;
-      width: 60%;
+      width: 500px;
    }
 }
