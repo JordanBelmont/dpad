@@ -1,7 +1,9 @@
+/* * IPHONE * */
+
 .now-playing {
-   margin: 0px 20px 0px 20px;
    text-align: center;
-   font-size: 25px;
+   font-size: 20px;
+   margin-top: 20px;
    letter-spacing: 10px;
    line-height: 50px;
    color: #D6187A;
@@ -16,11 +18,28 @@
    100% { color: #D6187A; }
 }
 
-/* * IPAD PRO * */
-@media only screen and (min-width: 1024px) {
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .now-playing {
+   font-size: 25px;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+   .now-playing {
+      font-size: 30px;
+      line-height: 0px;
+      margin: 3% 10% 2% 10%;
+   }
+}
+
+/* * IMAC * */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
    .now-playing {
       font-size: 40px;
-      line-height: 0px;
-      margin: 60px 20px 40px 20px;
    }
 }
