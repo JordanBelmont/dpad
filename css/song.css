@@ -1,48 +1,60 @@
-.flex-song {
-   display: flex;
-   justify-content: center;
-   grid-area: album;
-   grid-area: song;
-}
+/* * IPHONE * */
 
 .song {
    text-align: center;
-   padding-top: 30px;
+   margin-top: 20px;
 }
 
 .game-name,
 .song-title {
    display: block;
-   font-size: 10px;
+   font-size: 18px;
    letter-spacing: 5px;
    line-height: 35px;
    color: #D6187A;
    font-family: "8bit";
 }
 
-.dash {
-   display: block;
-   font-size: 20px;
-   color: #D6187A;
-   font-family: "8bit";
+.game-name {
+   margin-top: 5px;
+   font-size: 16px;
 }
 
-/* * IPAD PRO * */
-@media only screen and (min-width: 1024px) {
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
    .game-name,
    .song-title {
       line-height: 50px;
+      font-size: 15px;
+   }
+
+   .song-title {
+      font-size: 20px;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+   .flex-song {
+      display: flex;
+      justify-content: center;
+      grid-area: album;
+      grid-area: song;
+   }
+}
+
+/* * IMAC * */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+   .game-name,
+   .song-title {
       display: block;
       font-size: 20px;
-      letter-spacing: 5px;
    }
 
    .song-title {
       font-size: 30px;
-   }
-
-   .dash {
-      font-size: 20px;
-      letter-spacing: 5px;
    }
 }
