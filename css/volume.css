@@ -1,63 +1,43 @@
 /* * IPHONE * */
 
 .volume-flex {
-   grid-area: volume;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-}
-
-.volume {
-   margin: 0px 0px 20px 0px;
-   color: #D6187A;
-   text-align: center;
-   width: 100%;
-}
-
-.volume button {
-   background-color: transparent;
-   background-repeat: no-repeat;
-   border: none;
-   cursor: pointer;
-   outline: none;
-   margin: 30px;
-}
-
-.volume-icon {
-   height: auto;
-   width: 50px;
-}
-
-.volume-icon:hover {
-   animation: colour-change 4s infinite;
+   display: none;
 }
 
 input {
-   -webkit-appearance: none;
-   width: 100%;
-   outline: none;
-   height: 2px;
-   background: #1671D5;
-}
+      -webkit-appearance: none;
+      width: 100%;
+      outline: none;
+      height: 2px;
+      background: #1671D5;
+   }
 
-input::-webkit-slider-thumb {
-   -webkit-appearance: none;
-   height: 20px;
-   width: 20px;
-   background: #F7EB32;
-   cursor: pointer;
-}
+   input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      background: #F7EB32;
+      cursor: pointer;
+   }
 
-@keyframes colour-change {
-   50% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
-}
+   @keyframes colour-change {
+      50% { filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%); }
+   }
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
 
+   .volume-flex {
+      grid-area: volume;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
    .volume {
       margin: 20px 0;
       width: 80%;
+      color: #D6187A;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -65,5 +45,19 @@ input::-webkit-slider-thumb {
 
    .volume button {
       margin: 20px 20px 20px 0;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      outline: none;
+   }
+
+   .volume-icon {
+      height: auto;
+      width: 50px;
+   }
+
+   .volume-icon:hover {
+      animation: colour-change 4s infinite;
    }
 }

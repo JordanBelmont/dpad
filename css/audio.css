@@ -14,7 +14,7 @@
    border: none;
    cursor: pointer;
    outline: none;
-   margin: 0 30px;
+   margin: 0 10px;
 }
 
 .play-icon,
@@ -29,6 +29,10 @@
    .audio {
       height: 50%;
    }
+
+   .audio button {
+   margin: 0 60px;
+}
 
    .play-icon,
    .previous-icon,
