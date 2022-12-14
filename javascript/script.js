@@ -46,9 +46,9 @@ let track_list = [
    },
    {
       name: "Brinstar",
-      game: "Metroid",
-      img: "images/albums/metroid.jpg",
-      path: "music/Metroid - Brinstar Theme.mp3"
+      game: "Super Smash Bros. Melee",
+      img: "images/albums/smashbros-melee.jpg",
+      path: "music/Super Smash Bros Melee - Brinstar.mp3"
    },
    {
       name: "Hell March",
@@ -184,7 +184,7 @@ let track_list = [
    },
    {
       name: "Doom M",
-      game: "The Lost Vikings 2",
+      game: "Lost Vikings 2",
       img: "images/albums/lost-vikings2.jpg",
       path: "music/The Lost Vikings 2 - Doom M.mp3"
    },
@@ -253,7 +253,20 @@ let track_list = [
       game: "F-Zero GX",
       img: "images/albums/f-zero.jpg",
       path: "music/F-Zero GX - Infinite Blue.mp3"
+   },
+   {
+      name: "Who'll Be The Hero",
+      game: "Violent Storm",
+      img: "images/albums/violent-storm.jpg",
+      path: "music/Violent Storm - Wholl Be The Hero.mp3"
+   },
+   {
+      name: "Pac Rainbow",
+      game: "Pac-Man Championship Edition DX",
+      img: "images/albums/pacman.jpg",
+      path: "music/Pac Man Championship Edition DX - Pac Rainbow.mp3"
    }
+
 ];
 
 // * FUNCTIONS
