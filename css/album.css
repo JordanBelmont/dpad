@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .flex-album {
    display: flex;
@@ -10,19 +10,33 @@
    width: 90%;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
-
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
    .album {
-      width: 75%;
+      width: 80%;
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
 
    .album {
-      padding-top: 50px;
-      width: 500px;
+      width: 60%;
+   }
+}
+
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
+   .album {
+      width: 30rem;
+   }
+}
+
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+   .album {
+      margin-top: 3rem;
+      width: 65%;
    }
 }

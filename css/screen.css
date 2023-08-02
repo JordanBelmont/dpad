@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .screen {
    margin: 5% 5% 0% 5%;
@@ -14,16 +14,18 @@
       "volume";
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
+
    .screen {
-      margin-bottom: 10%;
+      margin-top: 2%;
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
-   
+
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
    .screen {
       margin: 5% 5% 5% 5%;
       grid-template-columns: repeat(2, 1fr);
@@ -38,8 +40,8 @@
    }
 }
 
-/* * IMAC * */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
 
    .screen {
       margin: 0 10% 4% 10%;

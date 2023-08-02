@@ -6,9 +6,13 @@
 </h3>
 
 # Description
-D-Pad is a responsive jukebox preloaded with a number of classic video-game tunes.
+*D-Pad* is a jukebox preloaded with a number of classic video-game tunes.
 
-Users can listen to the music-player using play/pause, next, previous and mute buttons as well as volume and song-time sliders.
+## Feature
+The main feature of *D-Pad* is a fully-responsive music player fitted with play/pause, next, previous and mute buttons as well as volume and song-time sliders.
+
+## Theme
+The chosen theme of *D-Pad* is a retro 80s inspired arcade machine.
 
 # Requirements
 No special requirements.
@@ -28,4 +32,4 @@ No special requirements.
 - A button for randomising the songs would be a nice addition.
 
 ## Bugs
-- The volume control and mute button don't seem to work when used on a phone.
+- The volume control and mute button don't seem to work when used on a phone so I removed them on that screen size.

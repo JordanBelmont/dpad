@@ -1,41 +1,64 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .song {
    text-align: center;
-   margin-top: 20px;
+   margin-top: 1.2rem;
+   color: #D6187A;
+   font-family: "8bit";
 }
 
 .game-name,
 .song-title {
    display: block;
-   font-size: 25px;
-   letter-spacing: 5px;
-   line-height: 35px;
-   color: #D6187A;
-   font-family: "8bit";
+   letter-spacing: 0.3rem;
+   line-height: 2.1rem;
+   margin-top: 0.4rem;
 }
 
 .game-name {
-   margin-top: 5px;
-   font-size: 16px;
+   font-size: 1rem;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+.song-title {
+   font-size: 1.6rem;
+}
+
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
    .game-name,
    .song-title {
-      line-height: 50px;
-      font-size: 15px;
+      line-height: 3.5rem;
+   }
+
+   .game-name {
+      font-size: 1.3rem;
    }
 
    .song-title {
-      font-size: 20px;
+      font-size: 2rem;
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
+
+   .game-name,
+   .song-title {
+      line-height: 3rem;
+   }
+
+   .game-name {
+      font-size: 1.3rem;
+   }
+
+   .song-title {
+      font-size: 2rem;
+   }
+}
+
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
 
    .flex-song {
       display: flex;
@@ -45,16 +68,14 @@
    }
 }
 
-/* * IMAC * */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
 
-   .game-name,
-   .song-title {
-      display: block;
-      font-size: 20px;
+   .game-name {
+      font-size: 1.5rem;
    }
 
    .song-title {
-      font-size: 30px;
+      font-size: 2.5rem;
    }
 }

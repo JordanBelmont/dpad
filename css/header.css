@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 header {
    text-align: center;
@@ -11,22 +11,34 @@ header {
    display: block;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
-
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
    .marquee {
-      width: 75%;
-      padding-top: 1%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
+      padding-top: .8rem;
    }
 }
 
-/* * IMAC * */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
 
+   .marquee {
+      width: 80%;
+   }
+}
+
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+   .marquee {
+      width: 70%;
+   }
+}
+
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
    .marquee {
       width: 50%;
    }
 }
-

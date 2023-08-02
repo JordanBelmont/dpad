@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .flex-duration {
    display: flex;
@@ -13,30 +13,30 @@
    flex-direction: column;
    align-items: center;
    width: 100%;
-}
-
-.current-time,
-.total-time {
-   margin: 30px;
-   font-size: 16px;
-   letter-spacing: 5px;
    color: #D6187A;
    font-family: "8bit";
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+.current-time,
+.total-time {
+   margin: 1.8rem;
+   font-size: 1rem;
+   letter-spacing: 0.3rem;
+}
+
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
 
    .duration {
       flex-direction: row;
       justify-content: center;
       width: 80%;
-      margin-top: 30px;
+      margin-top: 1.8rem;
    }
 
    .current-time,
    .total-time {
-      margin: 10px;
-      font-size: 20px;
+      margin: 0.5rem;
+      font-size: 1.3rem;
    }
 }
