@@ -45,27 +45,13 @@ input::-webkit-slider-thumb {
       justify-content: center;
    }
 
-   .volume {
+   .volume, .duration {
       margin: 1.2rem 0;
       width: 80%;
       color: #D6187A;
       display: flex;
       align-items: center;
       justify-content: center;
-   }
-
-   .volume button {
-      margin: 1.2rem 1.2rem 1.2rem 0;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      border: none;
-      cursor: pointer;
-      outline: none;
-   }
-
-   .volume-icon {
-      height: auto;
-      width: 3rem;
    }
 
    .volume-icon:hover {

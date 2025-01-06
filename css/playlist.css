@@ -1,0 +1,41 @@
+.playlist-name {
+   margin: 50px;
+   display: flex;
+   justify-content: center;
+   grid-area: playlist-name;
+}
+
+.playlist {
+   margin: 0 0 16px;
+   padding: 0;
+   border: 2px solid #999;
+   display: flex;
+   justify-content: center;
+   grid-area: playlist;
+}
+
+.track-list li {
+   list-style: none;
+   cursor: pointer;
+   padding: 3px 6px;
+}
+
+.track-list li:nth-child(even):not(:hover):not(.playing) {
+   background: #eee;
+}
+
+.track-list li:hover {
+   background-color: bisque;
+}
+
+.track-list li.playing {
+   background-color: tomato;
+}
+
+h1 {
+   color: red;
+}
+
+ul {
+   color: red;
+}

@@ -31,12 +31,12 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
       grid-template-areas:
-         "album volume"
-         "album ."
-         "album audio"
-         "album ."
-         "song duration"
-         "song .";
+         "playlist-name volume"
+         "playlist album"
+         "playlist album"
+         "playlist album"
+         "playlist duration"
+         "playlist .";
    }
 }
 

@@ -2,7 +2,6 @@
 
 .flex-duration {
    display: flex;
-   flex-direction: row;
    align-items: center;
    justify-content: center;
    grid-area: duration;
@@ -28,6 +27,7 @@
 @media only screen and (min-width: 769px) {
 
    .duration {
+      display: flex;
       flex-direction: row;
       justify-content: center;
       width: 80%;

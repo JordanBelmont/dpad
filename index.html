@@ -3,74 +3,100 @@
 
 <head>
    <meta charset="utf-8">
-   <meta name="websitedescription" content="test">
-   <meta http-equiv="imagetoolbar" content="no">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" href="#">
-   <link rel="stylesheet" href="css/style.css">
-   <script defer src="javascript/script.js"></script>
+   <meta name="websitedescription"
+         content="test">
+   <meta http-equiv="imagetoolbar"
+         content="no">
+   <meta http-equiv="x-ua-compatible"
+         content="ie=edge">
+   <meta name="viewport"
+         content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon"
+         href="#">
+   <link rel="stylesheet"
+         href="css/style.css">
+   <script defer
+           src="javascript/script.js"></script>
 
    <title></title>
 </head>
 
 <body>
+
    <div class="display">
       <header>
-         <img class="marquee" src="images/marquee.png" alt="d-pad arcade marquee">
+         <img class="marquee"
+              src="/images/marquee.png"
+              alt="d-pad arcade marquee">
       </header>
 
       <!-- Now Playing -->
-      <p class="now-playing">NOW PLAYING</p>
+      <p class="now-playing">LET'S PLAY</p>
 
       <!-- Screen -->
       <div class="screen">
 
-         <!-- Album -->
-         <div class="flex-album">
-            <img class="album" id="album">
+         <!-- Playlist Header -->
+         <div class="flex-center">
+            <button id="previous">&larr;</button>
+            <h1 class="grow playlist-name"
+                id="playlistName">Playlist name</h1>
+            <button id="next">&rarr;</button>
          </div>
 
-         <!-- Audio Controls -->
-         <div class="audio">
-            <button id="previous">
-               <img class="previous-icon" src="icons/previous.png"></img>
-            </button>
-            <button id="play">
-               <img class="play-icon" src="icons/play.png"></img>
-            </button>
-            <button id="next">
-               <img class="next-icon" aria-hidden="true" src="icons/next.png"></img>
-            </button>
-         </div>
-
-         <!-- Duration -->
-         <div class="flex-duration">
-            <div class="duration">
-               <div class="current-time" id="currentTime">00:00</div>
-               <input type="range" min="0" max="100" value="0" id="durationSlider">
-               <div class="total-time" id="totalTime">00:00</div>
-            </div>
-         </div>
-
-         <!-- Song -->
-         <div class="flex-song">
-            <div class="song">
-               <p class="song-title" id="title">song title</p>
-               <p class="game-name" id="game">game name</p>
-            </div>
-         </div>
+         <!-- Playlist -->
+         <ul class="playlist"
+             id="playlist">
+            <li>Loading</li>
+         </ul>
 
          <!-- Volume -->
          <div class="volume-flex">
             <div class="volume">
                <button id="mute">
-                  <img class="volume-icon" id="volumeIcon" src="icons/volume.png"></img>
+                  <img class="volume-icon"
+                       id="volumeIcon"
+                       src="https://jordanbelmont.github.io/dpad/icons/volume.png"></img>
                </button>
-               <input type="range" min="0" max="100" value="50" id="volumeSlider">
+               <input type="range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      id="volumeSlider">
+            </div>
+         </div>
+
+         <!-- Album -->
+         <div class="flex-album">
+            <img class="album"
+                 id="album"
+                 src="https://placehold.co/400/EEE/31343C">
+         </div>
+
+         <!-- Duration -->
+         <div class="flex-duration">
+            <div class="duration">
+               <button id="pause">
+                  <img class="pause-icon"
+                       src="https://jordanbelmont.github.io/dpad/icons/pause.png"
+                       width="20"
+                       height="20"></img>
+               </button>
+               <div class="current-time"
+                    id="currentTime">00:00</div>
+               <input type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="durationSlider">
+               <div class="total-time"
+                    id="totalTime">00:00</div>
             </div>
          </div>
       </div>
+   </div>
+
+
 </body>
 
 </html>
