@@ -1,5 +1,11 @@
+.flex-center {
+   display: flex;
+   justify-content: center;
+}
+
 .playlist-name {
-   margin: 50px;
+   width: 50%;
+   margin: 75px;
    display: flex;
    justify-content: center;
    grid-area: playlist-name;
@@ -8,16 +14,27 @@
 .playlist {
    margin: 0 0 16px;
    padding: 0;
-   border: 2px solid #999;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
    grid-area: playlist;
+   font-family: "8bit";
 }
 
-.track-list li {
+li {
    list-style: none;
    cursor: pointer;
-   padding: 3px 6px;
+   padding: 10px;
+   margin: 10px;
+   width: 80%;
+   border-style: solid;
+   border-width: 5px;
+   border-radius: 50px;
+   border-color: #02b7eb;
+   color: #D6187A;
+   text-align: center;
+   white-space: pre-line;
 }
 
 .track-list li:nth-child(even):not(:hover):not(.playing) {
@@ -32,10 +49,17 @@
    background-color: tomato;
 }
 
-h1 {
-   color: red;
+li:hover {
+   animation: colour-change 4s infinite;
 }
 
-ul {
-   color: red;
+@keyframes colour-change {
+   50% {
+      filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+   }
+}
+
+.active {
+   border-color: #f7eb38;
+   color: #1871d5;
 }

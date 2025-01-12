@@ -30,33 +30,39 @@
               alt="d-pad arcade marquee">
       </header>
 
-      <!-- Now Playing -->
-      <p class="now-playing">LET'S PLAY</p>
-
       <!-- Screen -->
       <div class="screen">
 
          <!-- Playlist Header -->
          <div class="flex-center">
-            <button id="previous">&larr;</button>
-            <h1 class="grow playlist-name"
-                id="playlistName">Playlist name</h1>
-            <button id="next">&rarr;</button>
+            <button id="previous">
+               <img class="previous-icon"
+                    id="previousIcon"
+                    src="icons/previous.png"></img>
+            </button>
+            <img class="grow playlist-name"
+                 id="playlistName"
+                 src="images/consoles/nintendo-logo.png">
+            </img>
+            <button id="next">
+               <img class="previous-icon"
+                    id="previousIcon"
+                    src="icons/next.png"></img>
+            </button>
          </div>
 
          <!-- Playlist -->
          <ul class="playlist"
              id="playlist">
-            <li>Loading</li>
          </ul>
 
          <!-- Volume -->
-         <div class="volume-flex">
+         <div class="flex-volume">
             <div class="volume">
                <button id="mute">
                   <img class="volume-icon"
                        id="volumeIcon"
-                       src="https://jordanbelmont.github.io/dpad/icons/volume.png"></img>
+                       src="icons/volume.png"></img>
                </button>
                <input type="range"
                       min="0"
@@ -70,7 +76,7 @@
          <div class="flex-album">
             <img class="album"
                  id="album"
-                 src="https://placehold.co/400/EEE/31343C">
+                 src="images/placeholder.png">
          </div>
 
          <!-- Duration -->
@@ -78,7 +84,7 @@
             <div class="duration">
                <button id="pause">
                   <img class="pause-icon"
-                       src="https://jordanbelmont.github.io/dpad/icons/pause.png"
+                       src="icons/pause.png"
                        width="20"
                        height="20"></img>
                </button>
@@ -95,6 +101,7 @@
          </div>
       </div>
    </div>
+
 
 
 </body>

@@ -1,0 +1,25 @@
+/* * PHONES * */
+
+button {
+   margin: 1.2rem 1.2rem 1.2rem 1.2rem;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   border: none;
+   cursor: pointer;
+   outline: none;
+}
+
+button img {
+   width: 4rem;
+   height: auto;
+}
+
+button:hover {
+   animation: colour-change 4s infinite;
+}
+
+@keyframes colour-change {
+   50% {
+      filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+   }
+}

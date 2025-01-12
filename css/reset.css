@@ -7,21 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
    vertical-align: baseline;
 }
 
-button {
-   margin: 1.2rem 1.2rem 1.2rem 0;
-   background-color: transparent;
-   background-repeat: no-repeat;
-   border: none;
-   cursor: pointer;
-   outline: none;
-}
-
-button img {
-   width: 3rem;
-   height: auto;
-}
-
-
 html {
    box-sizing: border-box;
 }

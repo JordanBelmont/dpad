@@ -1,0 +1,74 @@
+/* * PHONES * */
+
+.flex-volume,
+.flex-duration {
+   display: none;
+}
+
+.current-time,
+.total-time {
+   margin: 1.8rem;
+   font-size: 1rem;
+   letter-spacing: 0.3rem;
+}
+
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
+   input {
+      width: 90%;
+   }
+}
+
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
+
+   .flex-volume {
+      grid-area: volume;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .flex-duration {
+      grid-area: duration;
+      display: flex;
+      align-items: row;
+      justify-content: center;
+   }
+
+   .volume,
+   .duration {
+      width: 80%;
+      color: #D6187A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "8bit";
+   }
+
+   .current-time,
+   .total-time {
+      margin: 0.5rem;
+      font-size: 1.3rem;
+   }
+
+   /* Sliders */
+
+   input {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      outline: none;
+      height: 0.2rem;
+      background: #1671D5;
+   }
+
+   input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 1.2rem;
+      width: 1.2rem;
+      background: #F7EB32;
+      cursor: pointer;
+   }
+}

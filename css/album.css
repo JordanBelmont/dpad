@@ -8,6 +8,11 @@
 
 .album {
    width: 90%;
+   border-radius: 5%;
+   border-style: solid;
+   border-width: 5px;
+   border-radius: 50px;
+   border-color: #1771d4;
 }
 
 /* * TABLETS * */
@@ -29,6 +34,7 @@
 @media only screen and (min-width: 1025px) {
 
    .album {
+      margin-top: 0;
       width: 30rem;
    }
 }
@@ -37,6 +43,6 @@
 @media only screen and (min-width: 1600px) and (max-width: 2560px) {
    .album {
       margin-top: 3rem;
-      width: 65%;
+      width: 80%;
    }
 }
