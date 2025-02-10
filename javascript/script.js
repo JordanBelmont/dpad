@@ -1,14 +1,10 @@
-const BASE_URL = "/"
+const previous = document.getElementById("previous");
+const pause = document.getElementById("pause");
+const next = document.getElementById("next");
 
-let previous = document.getElementById("previous");
-let play = document.getElementById("pause");
-let next = document.getElementById("next");
-// let game = document.getElementById("game");
-// let title = document.getElementById("title");
-
-let playlistName = document.getElementById("playlistName");
-let playIcon = document.querySelector(".play-icon");
-let playlist = document.getElementById("playlist");
+let tracklistName = document.getElementById("tracklistName");
+let tracklist = document.getElementById("tracklist");
+let playIcon = document.querySelector(".pause-icon");
 let song = document.getElementById("li");
 let album = document.getElementById("album");
 let mute = document.getElementById("mute");
@@ -30,7 +26,6 @@ let isPlaying = false;
 let muteToggle = false;
 // Create audio element for the player
 let audioPlayer = document.createElement("audio");
-
 
 
 let tracklists = [
@@ -112,7 +107,7 @@ let tracklists = [
          {
             name: "New Junk City",
             game: "Earthworm Jim",
-            img: "images/albums/earthworm-jim.jpng.png",
+            img: "images/albums/earthworm-jim.png",
             path: "music/Earthworm Jim - New Junk City.mp3"
          },
          {
@@ -136,13 +131,13 @@ let tracklists = [
          {
             name: "Ravaged Village",
             game: "Golden Axe II",
-            img: "images/albums/golden-axe.png",
+            img: "images/albums/golden-axe-2.png",
             path: "music/Golden Axe II - Ravaged Village.mp3"
          },
          {
             name: "Guardiana Library",
             game: "Shining Force CD",
-            img: "images/albums/shining-force.png",
+            img: "images/albums/shining-force-cd.png",
             path: "music/Shining Force CD - Guardiana Library.mp3"
          },
          {
@@ -152,13 +147,13 @@ let tracklists = [
             path: "music/Shinobi III - My Dear D.mp3"
          },
          {
-            name: "My Dear D",
+            name: "Title Theme",
             game: "Splatterhouse 2",
             img: "images/albums/splatterhouse-2.png",
             path: "music/Splatterhouse 2 - Title Theme.mp3"
          },
          {
-            name: "My Dear D",
+            name: "Never Return Alive",
             game: "Streets of Rage 2",
             img: "images/albums/streets-of-rage-2.png",
             path: "music/Streets of Rage 2 - Never Return Alive.mp3"
@@ -196,7 +191,7 @@ let tracklists = [
          {
             name: "Main Titles",
             game: "God of War II",
-            img: "images/albums/gof-of-war-II.png",
+            img: "images/albums/god-of-war-II.png",
             path: "music/God of War II - Main Titles.mp3"
          },
          {
@@ -245,7 +240,7 @@ let tracklists = [
             name: "Zero Signal",
             game: "Carmageddon",
             img: "images/albums/carmageddon.png",
-            path: "music/Carmageddon - Zero Signal.mp3"
+            path: "music/Carmageddon -  Zero Signal.mp3"
          },
          {
             name: "Welcome to the Dead Estate",
@@ -274,8 +269,8 @@ let tracklists = [
          {
             name: "Can o' Salt",
             game: "Super Meat Boy",
-            img: "images/albums/super-meatboy.png",
-            path: "music/Super Meatboy - Can o' Salt.mp3"
+            img: "images/albums/super-meat-boy.png",
+            path: "music/Super Meat Boy - Can o' Salt.mp3"
          },
          {
             name: "Engineering",
@@ -302,126 +297,89 @@ let tracklists = [
 
 // * FUNCTIONS
 
+// PLAY SONG
 const pickTrack = (track) => {
-   audioPlayer.src = BASE_URL + track.path;
+   audioPlayer.src = track.path;
    audioPlayer.load();
    audioPlayer.play();
-   album.src = BASE_URL + track.img;
+   album.src = track.img;
 }
 
-// Load Tracklist
+// LOAD TRACKLIST
 loadTracklist = (index) => {
-
-   // Clear previous timer
-   // Load a new track
    console.log(tracklists[index]);
-   // playlistName.src = tracklists[index].name;
+   tracklist.innerHTML = ""
+   tracklistName.src = tracklists[index].image;
    tracklists[index].tracks.forEach((track) => {
-      // create a new LI element that'll contain a track
       const newItem = document.createElement('li')
-      // Set its text content
       newItem.innerHTML = track.game + "<br /><br />" + track.name;
-      // add it to the track list UL
-      playlist.appendChild(newItem)
-
+      tracklist.appendChild(newItem)
       newItem.addEventListener('click', () => {
          pickTrack(track)
          document.querySelector('.active')?.classList.remove('active');
          newItem.classList.add('active');
+         playIcon.src = 'icons/pause.png';
       })
    })
 }
 
-
-// Update album art
-// album.src = BASE_URL + tracklists[tracklistIndex].tracks[track_index].img;
-
-// Autoplay
-// audioPlayer.addEventListener("ended", function autoplay() {
-//    if (audioPlayer.ended) {
-//       track_index += 1;
-//       loadTracklist(track_index);
-//       playTrack();
-//    }
-// })
-
-// Play/Pause Click
-play.addEventListener("click", function playPauseTrack() {
-
-   console.log('Clicked play button', audioPlayer.paused)
-   if (audioPlayer.paused) {
-      playTrack();
+// PREVIOUS TRACKLIST
+previous.addEventListener("click", prevTrack = () => {
+   if (tracklistIndex === 0) {
+      tracklistIndex = tracklists.length - 1;
    } else {
-      pauseTrack();
+      tracklistIndex--
    }
+   loadTracklist(tracklistIndex);
 })
 
-// Play
-playTrack = () => {
-   audioPlayer.play();
-   playIcon.src = 'https://jordanbelmont.github.io/dpad/icons/pause.png';
-}
+// NEXT TRACKLIST
+next.addEventListener("click", nextTrack = () => {
+   if (tracklistIndex === tracklists.length - 1) {
+      tracklistIndex = 0;
+   } else {
+      tracklistIndex++;
+   }
+   loadTracklist(tracklistIndex);
+})
 
-// Pause
-pauseTrack = () => {
-   audioPlayer.pause();
-   playIcon.src = 'https://jordanbelmont.github.io/dpad/icons/play.png';
-}
+// PAUSE SONG
+pause.addEventListener("click", playPauseTrack = () => {
+   if (audioPlayer.paused) {
+      audioPlayer.play();
+      playIcon.src = 'icons/pause.png';
+   } else {
+      audioPlayer.pause();
+      playIcon.src = 'icons/play.png';
+   }
+});
 
-// // Next track
-// next.addEventListener("click", function nextTrack() {
-//    if (track_index < track_list.length - 1) {
-//       track_index += 1;
-//    } else {
-//       track_index = 0;
-//    }
-//    loadTrack(track_index);
-//    playTrack();
-// });
-
-// // Previous track
-// previous.addEventListener("click", function prevTrack() {
-//    if (track_index > 0) {
-//       track_index -= 1;
-//    } else {
-//       track_index = track_list.length;
-//    }
-//    loadTrack(track_index);
-//    playTrack();
-// });
-
-// Mute sound
+// MUTE BUTTON
 mute.addEventListener("click", muteSound = () => {
    if (muteToggle !== true) {
       muteToggle = true;
       audioPlayer.volume = 0;
       volumeSlider.value = 0;
-      volumeIcon.src = BASE_URL + "icons/mute.png";
-
+      volumeIcon.src = 'icons/mute.png';
    } else {
       muteToggle = false;
       audioPlayer.volume = 1;
       volumeSlider.value = 50;
-      volumeIcon.src = BASE_URL + "icons/volume.png";
+      volumeIcon.src = 'icons/volume.png';
    }
 });
 
-// Duration slider
+// VOLUME SLIDER
+volumeSlider.addEventListener("change", setVolume = () => {
+   audioPlayer.volume = volumeSlider.value / 100;
+});
+
+// DURATION SLIDER
 durationSlider.addEventListener("change", seek = () => {
    seekto = audioPlayer.duration * (durationSlider.value / 100);
    audioPlayer.currentTime = seekto;
 });
 
-// Volume slider
-volumeSlider.addEventListener("change", setVolume = () => {
-   audioPlayer.volume = volumeSlider.value / 100;
-});
-
-// example of use:
-//   formatTime(10, 5)
-// would return:
-//   "10:5"
-// 1, 1
 const formatTime = (minutes, seconds) => {
    return String(minutes).padStart(2, '0 ') +
       ':' + String(seconds).padStart(2, '0 ');
@@ -442,8 +400,7 @@ const seekUpdate = () => {
       totalTime.textContent = formatTime(durationMinutes, durationSeconds);
    }
 }
-
 // Update duration slider
 updateTimer = setInterval(seekUpdate, 100);
 
-loadTracklist(track_index);
+loadTracklist(tracklistIndex);

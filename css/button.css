@@ -1,7 +1,6 @@
 /* * PHONES * */
 
 button {
-   margin: 1.2rem 1.2rem 1.2rem 1.2rem;
    background-color: transparent;
    background-repeat: no-repeat;
    border: none;
@@ -12,6 +11,7 @@ button {
 button img {
    width: 4rem;
    height: auto;
+   margin: 1rem;
 }
 
 button:hover {

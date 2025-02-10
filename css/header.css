@@ -7,75 +7,16 @@ header {
 }
 
 .marquee {
-   width: 100%;
+   width: 90%;
    display: block;
-}
-
-.now-playing {
-   font-size: 1.4rem;
-   margin: 1.5rem 0 0 0.7rem;
-   letter-spacing: 0.6rem;
-   line-height: 3.8rem;
-   color: #D6187A;
-   font-family: "8bit";
-   animation: color-change 1s infinite;
-   text-align: center;
-}
-
-/* * TABLETS * */
-@media only screen and (min-width: 481px) {
-   .marquee {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: .8rem;
-   }
-
-   .now-playing {
-      font-size: 1.7rem;
-   }
-}
-
-/* * LAPTOPS * */
-@media only screen and (min-width: 769px) {
-
-   .marquee {
-      width: 80%;
-   }
-
-   .now-playing {
-      font-size: 2rem;
-   }
-}
-
-/* * DESKTOPS * */
-@media only screen and (min-width: 1025px) {
-   .marquee {
-      width: 70%;
-   }
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: .8rem;
 }
 
 /* * TV * */
-@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+@media only screen and (min-width: 1590px) and (max-width: 2560px) {
    .marquee {
-      width: 50%;
-   }
-}
-
-.now-playing {
-   font-size: 2rem;
-}
-
-@keyframes color-change {
-   0% {
-      color: #D6187A;
-   }
-
-   50% {
-      color: #F7EB32;
-   }
-
-   100% {
-      color: #D6187A;
+      width: 60%;
    }
 }

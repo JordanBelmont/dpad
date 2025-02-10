@@ -1,48 +1,24 @@
 /* * PHONES * */
 
-.flex-album {
-   display: flex;
-   justify-content: center;
-   grid-area: album;
-}
-
 .album {
-   width: 90%;
-   border-radius: 5%;
-   border-style: solid;
-   border-width: 5px;
-   border-radius: 50px;
-   border-color: #1771d4;
-}
-
-/* * TABLETS * */
-@media only screen and (min-width: 481px) {
-   .album {
-      width: 80%;
-   }
-}
-
-/* * LAPTOPS * */
-@media only screen and (min-width: 769px) {
-
-   .album {
-      width: 60%;
-   }
-}
-
-/* * DESKTOPS * */
-@media only screen and (min-width: 1025px) {
-
-   .album {
-      margin-top: 0;
-      width: 30rem;
-   }
+   display: none;
 }
 
 /* * TV * */
-@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+@media only screen and (min-width: 1590px) and (max-width: 2560px) {
+   .flex-album {
+      display: flex;
+      justify-content: center;
+      grid-area: album;
+   }
+
    .album {
-      margin-top: 3rem;
+      display: block;
       width: 80%;
+      border-radius: 5%;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 50px;
+      border-color: #1771d4;
    }
 }

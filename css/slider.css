@@ -12,11 +12,8 @@
    letter-spacing: 0.3rem;
 }
 
-/* * TABLETS * */
-@media only screen and (min-width: 481px) {
-   input {
-      width: 90%;
-   }
+input {
+   width: 90%;
 }
 
 /* * LAPTOPS * */

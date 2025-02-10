@@ -1,9 +1,11 @@
+/* * PHONES * */
+
 .flex-center {
    display: flex;
    justify-content: center;
 }
 
-.playlist-name {
+.tracklist-name {
    width: 50%;
    margin: 75px;
    display: flex;
@@ -11,7 +13,7 @@
    grid-area: playlist-name;
 }
 
-.playlist {
+.tracklist {
    margin: 0 0 16px;
    padding: 0;
    display: flex;

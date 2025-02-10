@@ -2,17 +2,5 @@
 
 .display {
    background-color: black;
-}
-
-/* * LAPTOPS * */
-@media only screen and (min-width: 769px) {
-
-   .display {
-      background-color: black;
-      background-image: url(/dpad/images/screen.jpg);
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-      overflow: hidden;
-   }
+   overflow: hidden;
 }
