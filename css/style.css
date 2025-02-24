@@ -2,13 +2,8 @@
 @import "typography.css";
 @import "header.css";
 @import "screen.css";
-@import "nowplaying.css";
-@import "volume.css";
 @import "album.css";
-@import "song.css";
-@import "audio.css";
 @import "button.css";
 @import "slider.css";
 @import "tracklist.css";
-@import "duration.css";
 @import "display.css";
