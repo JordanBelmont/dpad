@@ -126,7 +126,7 @@ let tracklists = [
             name: "Rise From Your Grave",
             game: "Altered Beast",
             img: "images/albums/altered-beast.png",
-            path: "music/Altered Beast - Rise From Your Grave.mp3"
+            path: "music/Altered Beast - Rise from Your Grave.mp3"
          },
          {
             name: "Ravaged Village",
